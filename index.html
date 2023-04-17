@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>My personal translator</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="header-text">My personal translator</h2>
+    </div>
+    <div class="select-container">
+      <form name="selected-form" method="post">
+        <select name="lang" id="select" class="select-box">
+          <option value="">Choose an option</option>
+          <option value="engToPl" id="engToPl">🇬🇧eng-pl🇵🇱</option>
+          <option value="plToEng" id="plToEng">🇵🇱pl-eng🇬🇧</option>
+        </select>
+        <button type="submit" class="btn-submit">Submit</button>
+        <button class="btn-submit add-new">Add new word</button>
+      </form>
+    </div>
+    <div class="show-container">
+      <div class="text first"></div>
+      <button class="btn-result show">translate</button>
+      <br />
+      <button class="btn-result next">next</button>
+      <div class="text">
+        <inline class="last last-show"></inline>
+      </div>
+    </div>
+    <div class="show-container-two hidden">
+      <form action="" class="form-input">
+        <p class="text-input">Word Pl:</p>
+        <input type="text" class="input-field" />
+        <p class="text-input">Word Eng:</p>
+        <input type="text" class="input-field" />
+
+        <br />
+        <button class="btn-post">POST</button>
+      </form>
+    </div>
+
+    <div id="root"></div>
+    <script src="script4.js"></script>
+  </body>
+</html>
