@@ -12,14 +12,6 @@ const inputPL = document.querySelector(".input-field-pl");
 const inputENG = document.querySelector(".input-field-eng");
 const btnPost = document.querySelector(".btn-post");
 
-// const data = [
-//   { id: 1, pol: "przypuszczac", eng: "assume" },
-//   { id: 2, pol: "przyzwoite", eng: "decent" },
-//   { id: 3, pol: "mozliwosc", eng: "opportunity" },
-//   { id: 4, pol: "zalowac", eng: "regrets" },
-//   { id: 5, pol: "5pl", eng: "5eng" },
-//   { id: 6, pol: "6pl", eng: "6eng" },
-// ];
 let data;
 let dataLength;
 async function loadData() {
@@ -74,7 +66,6 @@ function showContent(value) {
   // e.preventDefault();
 
   if (value === 2) {
-    // console.log();
     let word = randomNum(data);
     first.innerHTML = word[0];
     translate.addEventListener("click", () => (last.textContent = word[1]));
